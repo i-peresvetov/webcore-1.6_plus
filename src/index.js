@@ -5,6 +5,8 @@ import Post from '@models/post'
 // import csv from './assets/data.csv'
 import WebpackLogo from '@/assets/webpack-logo'
 import '@/styles/style.css'
+import '@/styles/less.less'
+import '@/styles/scss.scss'
 
 const post = new Post('Webpack Post Title', WebpackLogo)
 
