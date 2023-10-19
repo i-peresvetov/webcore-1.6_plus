@@ -42,7 +42,7 @@ const cssLoaders = extra => {
   ]
 
   if (extra) {
-    loader.push(extra)
+    loaders.push(extra)
   }
   return loaders
 }
