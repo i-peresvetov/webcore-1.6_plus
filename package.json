@@ -4,12 +4,37 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open",
+    "watch": "webpack --mode development --watch"
   },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "not OperaMini All",
+    "not dead"
+  ],
   "author": "i.peresvetov",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "autoprefixer": "^10.4.16",
+    "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.0.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "postcss-loader": "^7.3.3",
+    "sass-loader": "^13.3.2",
     "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
