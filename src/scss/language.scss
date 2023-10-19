@@ -1,0 +1,25 @@
+.language {
+  display: flex;
+
+  &__var {
+    margin-right: 7px;
+    border: none;
+    background-color: transparent;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    border-radius: 1px;
+    transition: 500ms;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:hover {
+      outline-color: #41f6d7;
+    }
+
+    &--active {
+      color: $title-color;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.order-btn {
+  width: 192px;
+  height: auto;
+  text-align: left;
+  color: $main-text-color;
+  font-family: "TTLakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 421px;
+  }
+
+  &__arrow {
+    width: 24px;
+    height: 27.4px;
+    display: inline-block;
+    background: url(../img/more.svg);
+    vertical-align: middle;
+  }
+}

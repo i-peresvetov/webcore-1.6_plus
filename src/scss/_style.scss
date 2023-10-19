@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "TTLakes", Arial, sans-serif;
+}
+
+
+/*SWIPER*/
+@import './css_swiper.min';
+@import './swiper';
+
+/*ОБЩИЕ*/
+@import 'h2-title';
+@import "menu-button";
+@import "menu-link";
+@import "logo";
+@import 'link-arrow';
+@import 'order-btn';
+@import 'submit-btn';
+@import 'modal';
+
+/*ШАПКА*/
+@import "header";
+@import "menu";
+
+/*БОКОВОЕ МЕНЮ*/
+@import 'left-menu';
+@import "contacts";
+@import "language";
+
+/*СТРАНИЦА*/
+@import "content";
+@import "page-name-container";
+@import "page-content";
+@import "expand-button";
+
+/*РЕМОНТЫ+СВАЙПЕРЫ*/
+@import 'repairing';
+@import 'prices-table';
+
+/*ФУТЕР*/
+@import 'footer';

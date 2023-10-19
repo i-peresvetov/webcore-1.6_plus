@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 400;
+  src: local("TTLakes-Regular"), url("../fonts/TTLakes-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 500;
+  src: local("TTLakes-Medium"), url("../fonts/TTLakes-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TTLakes";
+  font-style: normal;
+  font-weight: 700;
+  src: local("TTLakes-Bold"), url("../fonts/TTLakes-Bold.woff") format("woff");
+}

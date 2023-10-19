@@ -1,0 +1,29 @@
+.page-name-container {
+  color: $main-text-color;
+  font-size: 18.66666666666667px; /*там мешают дефолтные стили*/
+  // font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 142.857% */
+  letter-spacing: -0.6px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    height: 40px;
+    width: 8px;
+    border-right: 4px solid $strong-border-color;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 12px;
+
+    @media (min-width: $tablet-breakpoint) {
+      margin-right: 20px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      margin-right: 30px;
+    }
+  }
+}

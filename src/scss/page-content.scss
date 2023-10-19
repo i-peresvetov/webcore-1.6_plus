@@ -1,0 +1,42 @@
+.page-content {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+
+  @media (min-width: $desktop-breakpoint) {
+    white-space: nowrap;
+    flex-wrap: wrap;
+    margin: 0 0 12px 0;
+  }
+
+  &__element {
+    &--active {
+      border-radius: 6px;
+      border: 2px solid #b8ffec;
+      background: #fff;
+    }
+  }
+
+  &__fade {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 40px;
+    right: 0;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0) 100%
+    );
+  }
+
+  & a {
+    padding: 8px 17px;
+    color: $title-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+  }
+}

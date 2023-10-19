@@ -1,3 +1,8 @@
-import '../scss/style.scss'
+// import './index.html';
+import '../scss/index.scss'
 
-console.log('Works!')
+import './js_swiper.min';
+import './swiper';
+import './left-menu';
+import './expand-btn';
+import './modal';

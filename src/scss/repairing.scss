@@ -1,0 +1,169 @@
+.repairing {
+  &__container {
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 24px;
+      top: 12px;
+      z-index: 100;
+
+      @media (min-width: $tablet-breakpoint) {
+        content: none;
+      }
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(
+        270deg,
+        rgba(248, 248, 248, 0) 0%,
+        #f8f8f8 83.16%
+      );
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(
+        270deg,
+        #f8f8f8 16.84%,
+        rgba(248, 248, 248, 0) 100%
+      );
+    }
+
+    &--brands {
+      &::before,
+      &::after {
+        height: 81px;
+      }
+    }
+
+    &--devices {
+      &::before,
+      &::after {
+        height: 170px;
+      }
+    }
+
+    &--prices {
+      @media (min-width: $tablet-breakpoint) {
+        margin: 0 24px;        
+      }
+
+      @media (min-width: $desktop-breakpoint) {
+        margin: 0 32px;
+      }
+      &::before,
+      &::after {
+        height: 215px;
+      }
+    }
+  }
+
+  &__list {
+    @media (min-width: $tablet-breakpoint) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px 24px;
+      padding: 24px 24px 0px 24px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      padding: 24px 32px 0px 32px;
+    }
+
+    &--minimazed {
+      @media (min-width: $tablet-breakpoint) {
+        height: 186px;
+      }
+    }
+
+    &--expanded {
+      @media (min-width: $tablet-breakpoint) {
+        height: auto;
+      }
+    }
+
+    &--prices {
+      @media (min-width: $tablet-breakpoint) {
+        padding: 0;
+      }
+    }
+  }
+
+  &__tablehead {
+    display: none;
+    background-color: red;
+  }
+
+  &__swiper-slide {
+    width: 240px;
+    margin-bottom: 1.6px;
+
+    @media (min-width: $tablet-breakpoint) {
+      width: auto;
+    }
+
+    &:first-of-type {
+      margin-left: 16px;
+      @media (min-width: $tablet-breakpoint) {
+        margin-left: 0;
+      }
+    }
+
+    &:last-of-type {
+      margin-right: 16px;
+
+      @media (min-width: $tablet-breakpoint) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    margin: 16px auto 12px auto;
+    border: 1px solid #eaeaea;    
+    border-radius: 6px;
+    display: flex;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    &--brands {
+      min-height: 72px;
+      padding: 0 16px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--devices {
+      min-height: 160px;
+      padding: 22px 16px 16px;
+      justify-content: space-between;
+    }
+
+    &--prices {
+      min-height: 200px;
+      flex-direction: column;
+    }
+
+    @media (min-width: $tablet-breakpoint) {
+      margin: 0;
+    }
+  }
+
+  &__expand-button {
+    display: none;
+    margin: 24px 24px 32px 24px;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: inline;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      margin: 24px 32px 34px 32px;
+    }
+  }
+}

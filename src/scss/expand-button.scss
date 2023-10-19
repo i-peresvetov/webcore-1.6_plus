@@ -1,0 +1,33 @@
+.expand-button {  
+  align-items: center;
+  padding-left: 32px;
+  height: 24px;
+  color: $main-text-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  border: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: flex;
+  }
+
+  &--show {
+    background-image: url(../img/expand.svg);
+    &::after {
+      content: 'Показать все';
+    }
+  }
+
+  &--hide {    
+    background-image: url(../img/hide.svg);
+    &::after {
+      content: 'Скрыть';
+    }
+  }
+}
