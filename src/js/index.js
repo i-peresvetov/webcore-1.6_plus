@@ -1,4 +1,3 @@
-// import './index.html';
 import '../scss/index.scss'
 
 import './js_swiper.min';
